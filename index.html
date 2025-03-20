@@ -19,6 +19,13 @@
         .weather-widget {
             transform: scale(1); /* Оригинальный размер */
         }
+        /* Скрываем текст "Калининград" */
+        .widget-plain {
+            font-size: 0; /* Скрываем текст */
+        }
+        .widget-plain::before {
+            content: ""; /* Убираем текст */
+        }
     </style>
     <!-- Code Weather Forecast rusmeteo.net -->
     <link href="https://api.rusmeteo.net/service/informers/css/widget-plain.min.css" rel="stylesheet" type="text/css">
