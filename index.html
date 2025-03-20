@@ -13,12 +13,11 @@
             overflow: hidden;
             background-color: black; /* Чёрный фон */
             display: flex;
-            justify-content: flex-start; /* Выравниваем по левому краю */
+            justify-content: center; /* Центрируем информер */
             align-items: center;
         }
         .weather-widget {
-            transform: scale(1); /* Возвращаем масштаб к оригинальному размеру */
-            margin-left: 10px; /* Отступ слева */
+            transform: scale(1); /* Оригинальный размер */
         }
     </style>
     <!-- Code Weather Forecast rusmeteo.net -->
@@ -26,7 +25,7 @@
 </head>
 <body>
     <div class="weather-widget">
-        <a href="https://rusmeteo.net/weather/kaliningrad/" class="widget-plain" id="b88b7ade32fb72905d2bfc7707556604" style="width:120px;height:120px;background-color:rgb(0, 0, 0);color:rgb(255, 255, 255)">Погода в Калининграде</a>
+        <a href="https://rusmeteo.net/weather/kaliningrad/" class="widget-plain" id="b88b7ade32fb72905d2bfc7707556604" style="width:120px;height:120px;background-color:rgb(0, 0, 0);color:rgb(255, 255, 255)"></a>
         <script async src="https://rusmeteo.net/api/informerV2/b88b7ade32fb72905d2bfc7707556604/" type="text/javascript"></script>
     </div>
     <!-- End Code Weather Forecast rusmeteo.net -->
