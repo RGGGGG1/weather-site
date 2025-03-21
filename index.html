@@ -19,10 +19,13 @@
         .weather-widget {
             transform: scale(1); /* Оригинальный размер */
         }
-        /* Делаем текст видимым и задаём чёрный цвет */
-        .widget-plain {
-            font-size: 14px; /* Восстанавливаем размер шрифта */
+        /* Стиль для слова "Калининград" */
+        .black-text {
             color: black !important; /* Чёрный цвет текста */
+        }
+        /* Стиль для остального текста */
+        .widget-plain {
+            color: white !important; /* Белый цвет текста */
         }
     </style>
     <!-- Code Weather Forecast rusmeteo.net -->
@@ -30,7 +33,9 @@
 </head>
 <body>
     <div class="weather-widget">
-        <a href="https://rusmeteo.net/weather/kaliningrad/" class="widget-plain" id="b88b7ade32fb72905d2bfc7707556604" style="width:120px;height:120px;background-color:rgb(0, 0, 0);color:rgb(255, 255, 255)">Калининград</a>
+        <a href="https://rusmeteo.net/weather/kaliningrad/" class="widget-plain" id="b88b7ade32fb72905d2bfc7707556604" style="width:120px;height:120px;background-color:rgb(0, 0, 0);color:rgb(255, 255, 255)">
+            <span class="black-text">Калининград</span>
+        </a>
         <script async src="https://rusmeteo.net/api/informerV2/b88b7ade32fb72905d2bfc7707556604/" type="text/javascript"></script>
     </div>
     <!-- End Code Weather Forecast rusmeteo.net -->
